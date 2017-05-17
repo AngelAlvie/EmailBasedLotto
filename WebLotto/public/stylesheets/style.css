@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(27,27,27);
+}
+.header, p {
+  color: white !important;
+}
+.input-box {
+  width: 50% !important;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #212121 !important;
+     opacity: 1 !important;
+}
+::-moz-placeholder { /* mozilla browsers */
+    color:    #212121 !important;
+     opacity: 1 !important;
+}
+
+button {
+  background-color: rgb(165,208,156) !important;
+}
+button:hover {
+  background-color: rgb(115,158,106) !important;
+}
