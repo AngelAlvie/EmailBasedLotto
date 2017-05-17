@@ -23,7 +23,19 @@ $(document).ready(function() {
     $.post("/submit", {
       kerberos: k,
     }, function(data) {
-      console.log(data);
-    })
+      console.log(data)
+      if (data === "success") {
+        $('.ui.modal.successful').modal('show').modal('attach events', '.button.close', 'hide');
+      } else if (data === "already in raffle") {
+        $('.ui.modal.recorded').modal('show').modal('attach events', '.button.close', 'hide');
+      } else if (data === "error") {
+        $('.ui.modal.failed').modal('show').modal('attach events', '.button.close', 'hide');
+      }
+    });
+    $('form').form('clear');
   });
+
+  //kill modals on key press
+}).on("keypress", function() {
+  $('.ui.modal').modal('hide');
 });

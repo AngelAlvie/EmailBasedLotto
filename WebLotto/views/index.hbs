@@ -1,7 +1,7 @@
 <div class="ui container">
   <img class="ui fluid image" src="/images/Cover Photo.png">
-  <h1 class="ui centered header"> Raffle Sign Up</h1>
-  <h2 class="ui centered header"> Enter for the chance to win!</h2>
+  <h1 class="ui white centered header"> Raffle Sign Up</h1>
+  <h2 class="ui white centered header"> Enter for the chance to win!</h2>
   <div class="ui container input-box">
     <form class= "ui form">
       <div class="field">
@@ -13,7 +13,30 @@
       <div class="ui error message"></div>
     </form>
   </div>
-  <h3 class="message"></h3>
   <img class="ui small centered image" src="/images/techx.png">
 </div>
+
+<!-- modals -->
+<div class="ui small successful modal">
+  <div class="header">
+    Your Kerberos has been successfully submitted submitted!
+    <br/>Press any button to continue.
+    <div class="ui right floated green button close">OK</div>
+  </div>
+</div>
+<div class="ui small failed modal">
+  <div class="header">
+    Server failed to save your kerberos for unknown reasons, please seek staff assistance.
+    <br/>Press any button to continue.
+    <div class="ui right floated green button close">OK</div>
+  </div>
+</div>
+<div class="ui small recorded modal">
+  <div class="header">
+    Your Kerberos has already been recorded.
+    <br/>Press any button to continue.
+    <div class="ui right floated green button close">OK</div>
+  </div>
+</div>
+
 <script src="/javascripts/index.js"></script>
